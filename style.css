@@ -1,0 +1,43 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgba(240, 236, 230, 0.742);
+    border-radius: 10px;
+    padding: min(2rem, 10vw);
+    width: min(50vw, 600px);
+    margin: auto;
+    margin-top: 20vh;
+    height: max(40vh, 500px);
+    display: flex;
+    flex-direction: column;
+}
+
+.quotes {
+    margin: auto;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quotes p, .quotes h1{
+    font-size: 1rem;
+}
+
+@media(min-width: 50em){
+    .quotes p, .quotes h1{
+        font-size: 1.5rem;
+    }
+}
+
+.btn {
+    width: fit-content;
+    margin-inline: auto;
+    padding: 1rem 1.5rem !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
